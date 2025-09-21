@@ -14,7 +14,7 @@ install:
 script:
   - npm test
 
-# Optionally, you can specify notifications
+# Optionally, you can specify notifications.
 notifications:
   email:
     recipients:
