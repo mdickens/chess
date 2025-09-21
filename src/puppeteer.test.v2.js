@@ -5,11 +5,14 @@ const path = require('path');
 async function processHtmlAndLogErrors(htmlFilePath, logFilePath) {
     let browser;
     try {
+  	// This is the correct launch call.
   	const browser = await puppeteer.launch({
     		headless: true,
-    		args: ['--no-sandbox', '--disable-setuid-sandbox'] // Add this line
+    		args: ['--no-sandbox', '--disable-setuid-sandbox']
   		});
-        browser = await puppeteer.launch();
+        // This is the duplicate and incorrect launch call, remove this line.
+        // browser = await puppeteer.launch();
+
         const page = await browser.newPage();
 
         const logStream = fs.createWriteStream(logFilePath, { flags: 'w' });
