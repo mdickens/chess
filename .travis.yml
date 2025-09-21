@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "14"  # Specify the Node.js version you want to use
+
+# Install dependencies
+install:
+  - npm install
+
+# Run tests
+script:
+  - npm test
+
+# Optionally, you can specify notifications
+notifications:
+  email:
+    recipients:
+      - marcdickenson.com@gmail.com
+    on_success: always  # Change to 'never' to disable notifications on success
+    on_failure: always  # Change to 'always' to receive notifications on failure
+

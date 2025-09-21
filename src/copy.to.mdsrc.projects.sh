@@ -1,0 +1,3 @@
+rm -rf ~/workspace/marcdickenson.com/src/projects/chess.vibe.coding.session.latest
+mkdir ~/workspace/marcdickenson.com/src/projects/chess.vibe.coding.session.latest
+cp -p -f -v -r tests modules style.css puppeteer.test.v2.js puppeteer.test.v2a.js puppeteer.test.v2b.js puppeteer.test.v2c.js puppeteer.test.v2d.js puppeteer.test.v2e.js puppeteer.test.v2f.js puppeteer.test.v2g.js puppeteer.test.v2h.js puppeteer.test.v2i.js puppeteer.test.v2j.js puppeteer.test.v2k.js index.html click.mp3 draw.mp3 place.mp3 quantum-music.mp3 remove.mp3 win.mp3  ~/workspace/marcdickenson.com/src/projects/chess.vibe.coding.session.latest
