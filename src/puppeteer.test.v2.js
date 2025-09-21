@@ -5,6 +5,10 @@ const path = require('path');
 async function processHtmlAndLogErrors(htmlFilePath, logFilePath) {
     let browser;
     try {
+  	const browser = await puppeteer.launch({
+    		headless: true,
+    		args: ['--no-sandbox', '--disable-setuid-sandbox'] // Add this line
+  		});
         browser = await puppeteer.launch();
         const page = await browser.newPage();
 
