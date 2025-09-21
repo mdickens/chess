@@ -1,12 +1,12 @@
 {
   "name": "chess",
   "version": "1.0.0",
-  "main": "src/puppeteer.test.v2.js",  // Adjusted to point to the src directory
+  "main": "src/puppeteer.test.v2.js",  
   "directories": {
-    "test": "src/tests"  // Specify the test directory if your tests are in src/tests
+    "test": "src/tests"
   },
   "scripts": {
-    "test": "node src/puppeteer.test.v2.js"  // Adjusted to point to the src directory
+    "test": "node src/puppeteer.test.v2.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
   "description": "",
   "dependencies": {
     "puppeteer": "^24.15.0",
-    "qunit": "^2.0.0"  // Ensure this line ends with a comma
+    "qunit": "^2.0.0"
   }
 }
 
