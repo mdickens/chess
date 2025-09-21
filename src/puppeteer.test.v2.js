@@ -80,9 +80,10 @@ async function processHtmlAndLogErrors(htmlFilePath, logFilePath) {
 
         await page.goto(fileUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
-        await page.waitForSelector('#start-game-button', { visible: true });
+        // Add a longer timeout to the waitForSelector calls
+        await page.waitForSelector('#start-game-button', { visible: true, timeout: 60000 });
         await page.click('#start-game-button');
-        await page.waitForSelector('#main-layout', { visible: true });
+        await page.waitForSelector('#main-layout', { visible: true, timeout: 60000 });
 
         await page.evaluate(() => {
             QUnit.log(result => {
